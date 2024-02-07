@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>raisa's portfolio</title>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat');
+      @import url('https://fonts.googleapis.com/css?family=Poppins');
+      @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Source Code Pro:200,300,400,500,600,700,800,900&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif, bold;
+      margin: 0;
+      padding: 0;
+      background-color: #343434;
+      }
+
+
+    header {
+      text-align: left;
+      padding: 0px;
+      margin-right: 25%;
+      margin-left: 15%;
+      margin-top: 10%;
+      color: #fff;
+      line-height: 1.60em;
+      }
+      
+    img {
+        right: 15%;
+        top: 25%;
+        position: absolute;
+        max-height: 40vh;
+        max-width:40%;
+        height: auto; /* Maintain the aspect ratio while resizing */
+    transition: all 0.4s ease; /* Add a smooth transition effect */
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 600px) {
+    img {
+        right: 5%;
+        max-width: 150px; /* Adjust the size for smaller screens */
+        
+    }
+    .role-description{
+        margin-right: 5%;
+    }
+      }
+
+    h1 {
+        font-size: 4.8em;
+        font-weight: 700;
+        color: #B9FFD5;
+        line-height: 1em;
+        letter-spacing: -2px;
+        line-height: 0.9;
+        margin-bottom: 10px;
+      }
+
+    .role-description {
+        margin-right: 40%;
+        position: relative;
+        font-size: 1.5em;
+        color: #89CDA5;
+      }
+
+    nav {
+        text-align: right;
+        margin-right:15%;
+      }
+
+    #menu-bar {
+        background-color: #F2F2F2;
+        height: 60px; 
+      }
+      
+    #logo{
+        left:0px;
+        margin-left:9%;
+      }
+      
+      
+    #homeBtn{
+        position:relative;
+      }
+      
+    button {
+        margin: 10px;
+        position: absolute;
+        top:1px;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        color: #89CDA5;
+        padding: 0.4em 0.1em;
+        font-size: 18px;
+        background: #F2F2F2;
+        cursor: pointer;
+        border: none;
+        transition: all 0.3s;
+      }
+      
+    button:hover {
+        color: grey;
+      }
+
+    button:active {
+        color: #666;
+      }
+.projects-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 1%;
+    padding: 0px;
+    margin-bottom: 10%;
+}
+
+h2 {
+    color: #E6EFEA;
+}
+
+.project-box {
+    height: 240px;
+    width: 180px;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 10px 20px #2C2C2C;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+      
+    .project-box:hover {
+      transform: scale(1.02);
+    }
+      
+    .project-box h3 {
+      margin: 0;
+      font-size: 1.2em;
+        line-height: 1.0em;
+    }
+ 
+      .title1{
+          justify-content: center;
+          text-align: center;
+      }
+      
+      .thank-you-bar1 {
+    padding: 0px;
+    height:26px;
+    text-align: center;
+    color: 89CDA5;
+          font-weight: bold;
+          font-size:1.5em;
+}
+.thank-you-bar {
+    background-color: #89CDA5;
+    padding: 2px;
+    height:60px;
+    text-align: center;
+    color: white;
+    font-size:0.8em;
+}
+      
+      
+  </style>
+</head>
+<body>
+    <div id="menu-bar">
+        <div id="logo"><button id="raisaBtn" onclick="alert('Go to Home page')">☘︎ raisa</button></div><nav>
+    <button id="homeBtn" onclick="alert('Go to Resume page')">resume</button>
+      <button id="graphicDesignBtn" onclick="alert('Book Graphic Design Appointment')">contact</button> 
+    </nav></div>
+  <header>
+    <h1>hello! ☘︎<br> this is <span style="color: #F2F2F2;">raisa</span>.</h1>
+    <p class="role-description">a <b><span style="color: #B9FFD5;">computer science</span></b> student with a passion for developing <b><span style="color: #B9FFD5;">apps & websites</span></b> that are accessible & meets the <b><span style="color: #B9FFD5;">user’s needs</span></b>.</p>
+  </header>
+    <img src="final-design.png" alt="PC graphic design by raisa">
+<div class="title1"><h2><br><br><br><br>recent projects</h2></div>
+  <section class="projects-section">
+    <div class="project-box" id="gameDevBox" onclick="alert('Game Development Project')">
+      <h3>game dev.</h3>
+    </div>
+    <div class="project-box" id="webDevBox" onclick="alert('Web Development Project')">
+      <h3>web dev.</h3>
+    </div>
+    <div class="project-box" id="appDevBox" onclick="alert('App Development Project')">
+      <h3>app dev.</h3>
+    </div>
+    <div class="project-box" id="designBox" onclick="alert('Design Project')">
+      <h3>graphic designs.</h3>
+    </div>
+  </section>
+        <div class="thank-you-bar1">
+        ᨒ𖠰
+    </div>
+    <div class="thank-you-bar">
+        © raisa
+    </div>
+
+  <script>
+  </script>
+</body>
+</html>
